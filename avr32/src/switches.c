@@ -7,7 +7,7 @@
 #include "gpio.h"
 #include "print_funcs.h"
 // aleph
-#include "aleph_board.h"
+#include "conf_board.h"
 #include "events.h"
 #include "event_types.h"
 #include "global.h"

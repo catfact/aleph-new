@@ -39,6 +39,7 @@ CSRCS += \
 	$(LIB_AVR32)/src/usb/hid/uhi_hid.c \
 	$(LIB_AVR32)/src/usb/midi/uhi_midi.c \
 	$(LIB_AVR32)/src/usb/midi/midi.c \
+	$(LIB_AVR32)/src/libfixmath/fix16.c \
 	$(ALEPH_AVR32)/src/app.c \
 	$(ALEPH_AVR32)/src/bfin.c \
 	$(ALEPH_AVR32)/src/control.c \
@@ -60,8 +61,7 @@ CSRCS += \
 	$(ALEPH_AVR32)/src/fat_io_lib/fat_string.c \
 	$(ALEPH_AVR32)/src/fat_io_lib/fat_table.c \
 	$(ALEPH_AVR32)/src/fat_io_lib/fat_write.c \
-	$(ALEPH_AVR32)/src/fonts/ume_tgo5_18.c \
-	$(ALEPH_AVR32)/src/libfixmath/fix16.c
+	$(ALEPH_AVR32)/src/fonts/ume_tgo5_18.c
 
 
 

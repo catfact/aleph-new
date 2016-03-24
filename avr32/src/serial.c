@@ -1,6 +1,6 @@
 #include "print_funcs.h"
 
-#include "aleph_board.h"
+#include "conf_board.h"
 #include "usart.h"
 
 #include "bfin.h"

@@ -15,12 +15,8 @@ include ../../avr32/avr32_src.mk
 
 # app sources
 CSRCS += \
-	$(APP_DIR)/src/app_mix.c \
-	$(APP_DIR)/src/app_timers.c \
-	$(APP_DIR)/src/ctl.c \
-	$(APP_DIR)/src/handler.c \
-	$(APP_DIR)/src/render.c \
-	$(APP_DIR)/src/scaler.c
+	$(APP_DIR)/src/app_blank.c \
+	$(APP_DIR)/src/handler.c
 
 # List of assembler source files.
 ASSRCS +=
