@@ -23,7 +23,7 @@
 // aleph
 //#include "conf_aleph.h"
 #include "debug.h"
-#include "aleph_board.h"
+#include "con_board.h"
 #include "conf_tc_irq.h"
 #include "filesystem.h"
 #include "init.h"

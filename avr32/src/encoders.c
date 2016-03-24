@@ -8,7 +8,7 @@
 
 // aleph
 //#include "conf_aleph.h"
-#include "aleph_board.h"
+#include "conf_board.h"
 #include "debug.h"
 #include "events.h"
 #include "event_types.h"

@@ -32,7 +32,7 @@
 #include "types.h"
 //#include "util.h"
 // avr32
-#include "aleph_board.h"
+#include "conf_board.h"
 #include "adc.h"
 #include "app.h"
 #include "bfin.h"
