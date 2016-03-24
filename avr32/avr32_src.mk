@@ -23,45 +23,45 @@ CSRCS += \
         common/services/clock/uc3a0_a1/sysclk.c            \
 	common/services/storage/ctrl_access/ctrl_access.c \
         common/services/usb/uhc/uhc.c \
-	$(ALEPH_AVR32)src/adc.c \
-	$(ALEPH_AVR32)src/app.c \
-	$(ALEPH_AVR32)src/bfin.c \
-	$(ALEPH_AVR32)src/control.c \
-	$(ALEPH_AVR32)src/events.c \
-	$(ALEPH_AVR32)src/encoders.c \
-	$(ALEPH_AVR32)src/filesystem.c \
-	$(ALEPH_AVR32)src/flash.c \
-	$(ALEPH_AVR32)src/font.c \
-	$(ALEPH_AVR32)src/i2c.c \
-	$(ALEPH_AVR32)src/init.c	\
-	$(ALEPH_AVR32)src/interrupts.c \
-	$(ALEPH_AVR32)src/main.c \
-	$(ALEPH_AVR32)src/memory.c \
-	$(ALEPH_AVR32)src/monome.c \
-	$(ALEPH_AVR32)src/region.c \
-	$(ALEPH_AVR32)src/screen.c \
-	$(ALEPH_AVR32)src/serial.c \
-	$(ALEPH_AVR32)src/simple_string.c \
-	$(ALEPH_AVR32)src/switches.c \
-	$(ALEPH_AVR32)src/timers.c \
-	$(ALEPH_AVR32)src/usb.c \
-	$(ALEPH_AVR32)src/usb/ftdi/uhi_ftdi.c \
-	$(ALEPH_AVR32)src/usb/ftdi/ftdi.c \
-	$(ALEPH_AVR32)src/usb/hid/hid.c \
-	$(ALEPH_AVR32)src/usb/hid/uhi_hid.c \
-	$(ALEPH_AVR32)src/usb/midi/uhi_midi.c \
-	$(ALEPH_AVR32)src/usb/midi/midi.c \
-	$(ALEPH_AVR32)src/fat_io_lib/fat_access.c \
-	$(ALEPH_AVR32)src/fat_io_lib/fat_cache.c \
-	$(ALEPH_AVR32)src/fat_io_lib/fat_filelib.c \
-	$(ALEPH_AVR32)src/fat_io_lib/fat_format.c \
-	$(ALEPH_AVR32)src/fat_io_lib/fat_misc.c \
-	$(ALEPH_AVR32)src/fat_io_lib/fat_string.c \
-	$(ALEPH_AVR32)src/fat_io_lib/fat_table.c \
-	$(ALEPH_AVR32)src/fat_io_lib/fat_write.c \
-	$(ALEPH_AVR32)src/fonts/ume_tgo5_18.c \
-	$(ALEPH_AVR32)src/fix.c \
-	$(ALEPH_AVR32)src/libfixmath/fix16.c
+	$(LIB_AVR32)/src/adc.c \
+	$(LIB_AVR32)/src/events.c \
+	$(LIB_AVR32)/src/fix.c \
+	$(LIB_AVR32)/src/font.c \
+	$(LIB_AVR32)/src/i2c.c \
+	$(LIB_AVR32)/src/monome.c \
+	$(LIB_AVR32)/src/region.c \
+	$(LIB_AVR32)/src/screen.c \
+	$(LIB_AVR32)/src/timers.c \
+	$(LIB_AVR32)/src/usb.c \
+	$(LIB_AVR32)/src/usb/ftdi/uhi_ftdi.c \
+	$(LIB_AVR32)/src/usb/ftdi/ftdi.c \
+	$(LIB_AVR32)/src/usb/hid/hid.c \
+	$(LIB_AVR32)/src/usb/hid/uhi_hid.c \
+	$(LIB_AVR32)/src/usb/midi/uhi_midi.c \
+	$(LIB_AVR32)/src/usb/midi/midi.c \
+	$(ALEPH_AVR32)/src/app.c \
+	$(ALEPH_AVR32)/src/bfin.c \
+	$(ALEPH_AVR32)/src/control.c \
+	$(ALEPH_AVR32)/src/encoders.c \
+	$(ALEPH_AVR32)/src/filesystem.c \
+	$(ALEPH_AVR32)/src/flash.c \
+	$(ALEPH_AVR32)/src/init.c	\
+	$(ALEPH_AVR32)/src/interrupts.c \
+	$(ALEPH_AVR32)/src/main.c \
+	$(ALEPH_AVR32)/src/memory.c \
+	$(ALEPH_AVR32)/src/serial.c \
+	$(ALEPH_AVR32)/src/simple_string.c \
+	$(ALEPH_AVR32)/src/switches.c \
+	$(ALEPH_AVR32)/src/fat_io_lib/fat_access.c \
+	$(ALEPH_AVR32)/src/fat_io_lib/fat_cache.c \
+	$(ALEPH_AVR32)/src/fat_io_lib/fat_filelib.c \
+	$(ALEPH_AVR32)/src/fat_io_lib/fat_format.c \
+	$(ALEPH_AVR32)/src/fat_io_lib/fat_misc.c \
+	$(ALEPH_AVR32)/src/fat_io_lib/fat_string.c \
+	$(ALEPH_AVR32)/src/fat_io_lib/fat_table.c \
+	$(ALEPH_AVR32)/src/fat_io_lib/fat_write.c \
+	$(ALEPH_AVR32)/src/fonts/ume_tgo5_18.c \
+	$(ALEPH_AVR32)/src/libfixmath/fix16.c
 
 
 
@@ -92,6 +92,7 @@ INC_PATH += \
 	$(LIB_AVR32)/src/usb/hid     \
 	$(LIB_AVR32)/src/usb/midi    \
         avr32/boards                                       \
+	avr32/components/memory/sd_mmc/sd_mmc_spi          \
         avr32/drivers/cpu/cycle_counter                    \
         avr32/drivers/ebi/smc/                             \
         avr32/drivers/flashc                               \
