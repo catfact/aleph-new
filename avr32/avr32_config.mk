@@ -6,8 +6,11 @@
 # app developers: feel free to include this or copy/edit as you like,
 # but beware of breaking things / bricking your unit..
 
-# avr32 core directory, relative to top-level asf
+# aleph-avr32 directory relative to top-level asf
 ALEPH_AVR32 = ../../avr32
+# monomde avr32 directory, relative to top-level asf
+LIB_AVR32 = ../../libavr32
+
 # aleph common directory
 ALEPH_COMMON = ../../common
 # application directory

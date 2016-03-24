@@ -68,7 +68,7 @@ CSRCS += \
 # List of assembler source files.
 ASSRCS += \
        avr32/drivers/intc/exception.S                     \
-	   $(ALEPH_AVR32)/startup/startup.S 				  \
+	   $(ALEPH_AVR32)/startup/startup.S 		  \
        avr32/utils/startup/trampoline_uc3.S
 
 #standard startup
@@ -81,44 +81,45 @@ ASSRCS += \
 
 # List of include paths.
 INC_PATH += \
-	$(ALEPH_AVR32)/conf \
-      avr32/boards                                       \
-       avr32/boards/user_board                               \
-	avr32/components/memory/sdram			 \
-	avr32/drivers/cpu/cycle_counter/                 \
-	avr32/drivers/ebi/smc/                            \
-	avr32/drivers/eic/                            \
-       avr32/drivers/flashc                               \
-       avr32/drivers/gpio                                 \
-       avr32/drivers/intc                                 \
-       avr32/drivers/pdca                                   \
-       avr32/drivers/pm                                   \
-       avr32/drivers/spi                                  \
-       avr32/drivers/tc                                 \
-       avr32/drivers/twi                                 \
-       avr32/drivers/usart                                \
-       avr32/drivers/usbb                                 \
-       avr32/services/delay                               \
-       avr32/services/fs/fat                              \
-       avr32/utils                                        \
-       avr32/utils/debug                                  \
-       avr32/utils/preprocessor                           \
-       common/boards                                      \
-	avr32/components/memory/sd_mmc/sd_mmc_spi         \
-       common/services/storage/ctrl_access                \
-       common/services/clock                              \
-	common/services/delay                             \
-       common/services/usb                                \
-       common/services/usb/class/hid                      \
-       common/services/usb/uhc                            \
-       common/utils                \
-	$(ALEPH_AVR32)	           \
-	$(ALEPH_AVR32)src	   \
-	$(ALEPH_AVR32)/conf	   \
-	$(ALEPH_AVR32)src/fat_io_lib  \
-	$(ALEPH_AVR32)src/usb     \
-	$(ALEPH_AVR32)src/usb/ftdi   \
-	$(ALEPH_AVR32)src/usb/hid \
-	$(ALEPH_AVR32)src/usb/midi   \
-	$(ALEPH_AVR32)src/libfixmath \
-	$(ALEPH_COMMON)
+	$(ALEPH_COMMON)              \
+	$(ALEPH_AVR32)/conf          \
+	$(ALEPH_AVR32)/src           \
+	$(LIB_AVR32)/src             \
+	$(LIB_AVR32)/src/fonts       \
+ 	$(LIB_AVR32)/src/libfixmath  \
+	$(LIB_AVR32)/src/usb         \
+	$(LIB_AVR32)/src/usb/ftdi    \
+	$(LIB_AVR32)/src/usb/hid     \
+	$(LIB_AVR32)/src/usb/midi    \
+        avr32/boards                                       \
+        avr32/drivers/cpu/cycle_counter                    \
+        avr32/drivers/ebi/smc/                             \
+        avr32/drivers/flashc                               \
+        avr32/drivers/gpio                                 \
+        avr32/drivers/intc                                 \
+        avr32/drivers/pm                                   \
+        avr32/drivers/spi                                  \
+        avr32/drivers/tc                                   \
+        avr32/drivers/twi                                  \
+        avr32/drivers/usart                                \
+        avr32/drivers/usbb                                 \
+        avr32/utils                                        \
+        avr32/utils/debug                                  \
+        avr32/utils/preprocessor                           \
+        avr32/services/delay                               \
+        avr32/services/fs/fat                              \
+        common/boards                                      \
+        common/boards/user_board                           \
+        common/services/storage/ctrl_access                \
+        common/services/clock                              \
+        common/services/delay                              \
+        common/services/usb/                               \
+        common/services/usb/uhc                            \
+        common/services/clock                              \
+        common/services/storage/ctrl_access                \
+        common/services/usb/class/msc                      \
+        common/services/usb/class/msc/host                 \
+        common/services/usb/class/hid                      \
+        common/services/usb/uhc                            \
+        common/services/spi/uc3_spi                        \
+        common/utils
