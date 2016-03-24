@@ -81,16 +81,17 @@ ASSRCS += \
 
 # List of include paths.
 INC_PATH += \
-	$(ALEPH_COMMON)              \
-	$(ALEPH_AVR32)/conf          \
-	$(ALEPH_AVR32)/src           \
-	$(LIB_AVR32)/src             \
-	$(LIB_AVR32)/src/fonts       \
- 	$(LIB_AVR32)/src/libfixmath  \
-	$(LIB_AVR32)/src/usb         \
-	$(LIB_AVR32)/src/usb/ftdi    \
-	$(LIB_AVR32)/src/usb/hid     \
-	$(LIB_AVR32)/src/usb/midi    \
+	$(ALEPH_COMMON)               \
+	$(ALEPH_AVR32)/conf           \
+	$(ALEPH_AVR32)/src            \
+	$(ALEPH_AVR32)/src/fat_io_lib \
+	$(LIB_AVR32)/src              \
+	$(LIB_AVR32)/src/fonts        \
+ 	$(LIB_AVR32)/src/libfixmath   \
+	$(LIB_AVR32)/src/usb          \
+	$(LIB_AVR32)/src/usb/ftdi     \
+	$(LIB_AVR32)/src/usb/hid      \
+	$(LIB_AVR32)/src/usb/midi     \
         avr32/boards                                       \
 	avr32/components/memory/sd_mmc/sd_mmc_spi          \
         avr32/drivers/cpu/cycle_counter                    \
