@@ -4,7 +4,7 @@
 #include "debug.h"
 
 #include "app.h"
-#include "aleph_board.h"
+#include "conf_board.h"
 #include "conf_tc_irq.h"
 #include "delay.h"
 #include "events.h"
