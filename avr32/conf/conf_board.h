@@ -7,18 +7,8 @@
 #ifndef _CONF_ALEPH_H_
 #define _CONF_ALEPH_H_
 
-/* //============================================== */
-/* //==== SDRAM */
-/* //define SDRAM_PART_HDR  "mt48lc16m16a2tg7e/mt48lc16m16a2tg7e.h" */
-
-/* //! Part header file of used SDRAM(s). */
-/* /// this is the actual part number, i attempted to customize, doesn't seem to matter */
-/* #define SDRAM_PART_HDR  "mt48lc16m16a2tg75.h" */
-/* ///// this is the defualt header for that part family from the EVK */
-/* //#define SDRAM_PART_HDR  "mt48lc16m16a2tg7e.h" */
-
-/* //! Data bus width to use the SDRAM(s) with (16 or 32 bits; always 16 bits on UC3). */
-/* #define SDRAM_DBW 16 */
+//! this is an aleph device
+#define MOD_ALEPH
 
 //==============================================
 //==== clocks
@@ -133,8 +123,8 @@
 #define SD_MMC_WRITE_PROTECT_PIN    AVR32_PIN_PB01
 
 // oled
-#define OLED_RESET_PIN    AVR32_PIN_PA07
-#define OLED_REGISTER_PIN AVR32_PIN_PA09
+#define OLED_RES_PIN    AVR32_PIN_PA07
+#define OLED_DC_PIN AVR32_PIN_PA09
 
 // bfin
 #define BFIN_HWAIT_PIN    AVR32_PIN_PA05
@@ -173,6 +163,7 @@
 
 
 //TWI
+#define TWI 					(&AVR32_TWI)
 #define TWI_DATA_PIN            AVR32_TWI_SDA_0_0_PIN
 #define TWI_DATA_FUNCTION   AVR32_TWI_SDA_0_0_FUNCTION
 #define TWI_CLOCK_PIN           AVR32_TWI_SCL_0_0_PIN
