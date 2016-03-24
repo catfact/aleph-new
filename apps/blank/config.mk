@@ -4,7 +4,7 @@
 # --- this is included via the ASF utility makefile.
 
 # app name
-APP = mix
+APP = blank
 
 BAUD = 115200
 
