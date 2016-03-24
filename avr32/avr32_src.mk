@@ -99,6 +99,7 @@ INC_PATH += \
         avr32/drivers/flashc                               \
         avr32/drivers/gpio                                 \
         avr32/drivers/intc                                 \
+        avr32/drivers/pdca                                 \
         avr32/drivers/pm                                   \
         avr32/drivers/spi                                  \
         avr32/drivers/tc                                   \
