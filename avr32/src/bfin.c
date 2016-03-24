@@ -17,7 +17,7 @@
 #include "protocol.h"
 
 // aleph/avr32
-#include "aleph_board.h"
+#include "conf_board.h"
 #include "app.h"
 #include "filesystem.h"
 #include "debug.h"
