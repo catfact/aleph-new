@@ -81,6 +81,7 @@ ASSRCS += \
 
 # List of include paths.
 INC_PATH += \
+	$(ALEPH_AVR32)/conf \
       avr32/boards                                       \
        avr32/boards/user_board                               \
 	avr32/components/memory/sdram			 \

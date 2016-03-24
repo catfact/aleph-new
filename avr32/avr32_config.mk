@@ -32,7 +32,8 @@ TARGET = aleph-$(APP).elf
 
 # Path relative to top level directory pointing to a linker script.
 # LINKER_SCRIPT = avr32/utils/linker_scripts/at32uc3a/0512/gcc/link_uc3a0512.lds
-LINKER_SCRIPT = $(APP_DIR)/aleph-$(APP).lds
+# LINKER_SCRIPT = $(APP_DIR)/aleph-$(APP).lds
+LINKER_SCRIPT = $(ALEPH_AVR32)/src/link_aleph.lds
 
 # AVR32 options for debugging. By default the common Makefile.in will
 # add -g3.
