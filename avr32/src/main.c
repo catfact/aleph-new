@@ -341,7 +341,8 @@ int main(void) {
     init_avr32();
 
     // show the startup screen
-    screen_startup();
+    //// FIXME: rewrite this somewhere else (not in screen driver)
+    //    screen_startup();
 
     // memory manager
     init_mem();
