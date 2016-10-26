@@ -1,6 +1,6 @@
 
-#ifndef _ALEPH_MODULE_COMMON_H_
-#define _ALEPH_MODULE_COMMON_H_
+#ifndef _ALEPH_MODULE_H_
+#define _ALEPH_MODULE_H_
 
 #include "types.h"
 
@@ -9,9 +9,9 @@
 
 // module version
 typedef struct _ModuleVersion {
-    u8 maj;   // major version (fundamentally different)
-    u8 min;   // minor version (may not be i/o compatibeble)
-    u16 rev;  // revision no.  (compatible)
+  u8 maj;       // major version (fundamentally different)
+  u8 min;       // minor version (may not be i/o compatibeble)
+  u16 rev; // revision no.  (compatible)
 } ModuleVersion;
 
 #endif

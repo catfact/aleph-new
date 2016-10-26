@@ -1,5 +1,6 @@
 
-/* buffer_common.h
+/* 
+   buffer_common.h
    aleph-common
 
    declare common buffer data types.
@@ -13,13 +14,15 @@
 #include "fix.h"
 #include "types.h"
 
+
 // descriptor
 typedef struct __attribute__((__packed__)) BufferDescStruct {
-    // count of channels
-    u32 channels;
-    // count of frames
-    u32 frames;
-    //...???
+  // count of channels
+  u32 channels;
+  // count of frames
+  u32 frames;
+  //...???
 } BufferDesc;
 
-#endif  // header guard
+
+#endif // header guard
