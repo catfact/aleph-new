@@ -1,11 +1,6 @@
 /*
    protocol.h
 
-=======
-/* 
-   protocol.h
-   
->>>>>>> upstream/master
    common
    aleph
 
