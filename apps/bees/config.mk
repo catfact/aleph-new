@@ -10,10 +10,9 @@ APP = bees
 BAUD=115200
 
 # boilerplate avr32 configuration
-include ../../avr32_lib/avr32_lib_config.mk
+include ../libavr32_config.mk
 # boilerplate avr32 sources
-include ../../avr32_lib/avr32_lib_src.mk
-
+include ../libavr32_src.mk
 
 # add C source files from application
 # please keep this alphabetized... 

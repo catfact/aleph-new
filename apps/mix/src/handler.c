@@ -23,7 +23,7 @@
 #include "print_funcs.h"
 
 // aleph-avr32
-#include "aleph_board.h"
+#include "conf_board.h"
 #include "app.h"
 #include "event_types.h"
 
