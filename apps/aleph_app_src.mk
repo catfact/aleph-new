@@ -5,7 +5,7 @@
 ALEPH_AVR32 = ../../avr32
 
 CSRC += \
-$(ALEPH_AVR32)/src/adc.c \
+$(ALEPH_AVR32)/src/adc_poll.c \
 $(ALEPH_AVR32)/src/app.c \
 $(ALEPH_AVR32)/src/bfin.c \
 $(ALEPH_AVR32)/src/control.c \
@@ -38,3 +38,4 @@ $(ALEPH_AVR32)/startup/startup.S \
 
 # additional include paths
 INC_PATH += $(ALEPH_AVR32)/src
+INC_PATH += $(ALEPH_AVR32)/src/fat_io_lib
