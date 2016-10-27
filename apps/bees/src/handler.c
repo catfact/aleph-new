@@ -21,9 +21,9 @@
 #include "print_funcs.h"
 
 // aleph-avr32
+#include "aleph_event_types.h"
 #include "app.h"
 #include "conf_board.h"
-#include "event_types.h"
 
 // bees
 #include "app_timers.h"

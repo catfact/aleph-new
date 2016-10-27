@@ -5,7 +5,7 @@
 
 #include "bfin.h"
 #include "events.h"
-#include "event_types.h"
+#include "aleph_event_types.h"
 #include "ser.h"
 
 // SERIAL DESCRIPTION:

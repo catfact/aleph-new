@@ -18,7 +18,8 @@
 #include "timers.h"
 
 // aleph avr32
-#include "adc.h"
+#include "app.h"
+#include "adc_poll.h"
 #include "control.h"
 #include "encoders.h"
 
@@ -105,7 +106,9 @@ static void enc_timer_callback(void* obj) {
 
 //adc polling callback
 static void adc_poll_timer_callback(void* obj) {
+  // blocking read
   adc_poll();
+  // spawn events here
 }
 
 //midi polling callback
