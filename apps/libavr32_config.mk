@@ -7,7 +7,7 @@
 # but beware of breaking things / bricking your unit..
 
 # avr32 core directory, relative to top-level asf
-ALEPH_AVR32 = ../
+LIB_AVR32 = ../
 # aleph common directory
 ALEPH_COMMON = ../../common
 # application directory

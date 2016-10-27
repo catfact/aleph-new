@@ -11,7 +11,6 @@
 #include "fix.h"
 #include "module_common.h"
 #include "param_common.h"
-#include "types.h"
 
 //! max size of blackfin ldr file
 #define BFIN_LDR_MAX_BYTES 0x12000

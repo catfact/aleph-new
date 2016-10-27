@@ -11,15 +11,16 @@
 //asf
 #include "print_funcs.h"
 
-// aleph-avr32
-#include "adc.h"
-#include "control.h"
-#include "encoders.h"
+// libavr32
 #include "events.h"
 #include "midi.h"
 #include "monome.h"
-
 #include "timers.h"
+
+// aleph avr32
+#include "adc.h"
+#include "control.h"
+#include "encoders.h"
 
 // bees
 #include "ops/op_metro.h"

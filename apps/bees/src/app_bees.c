@@ -13,10 +13,10 @@
 #include "sd_mmc_spi.h"
 
 // aleph-avr32
+#include "aleph_event_types.h"
 #include "app.h"
 #include "bfin.h"
 #include "events.h"
-#include "event_types.h"
 #include "flash.h"
 #include "monome.h"
 #include "screen.h"
