@@ -16,7 +16,7 @@ $(ALEPH_AVR32)/src/init.c	\
 $(ALEPH_AVR32)/src/interrupts.c \
 $(ALEPH_AVR32)/src/main.c \
 $(ALEPH_AVR32)/src/memory.c \
-$(ALEPH_AVR32)/src/region.c \
+$(ALEPH_AVR32)/src/region_extra.c \
 $(ALEPH_AVR32)/src/serial.c \
 $(ALEPH_AVR32)/src/simple_string.c \
 $(ALEPH_AVR32)/src/switches.c \
@@ -28,7 +28,7 @@ $(ALEPH_AVR32)/src/fat_io_lib/fat_misc.c \
 $(ALEPH_AVR32)/src/fat_io_lib/fat_string.c \
 $(ALEPH_AVR32)/src/fat_io_lib/fat_table.c \
 $(ALEPH_AVR32)/src/fat_io_lib/fat_write.c \
-$(ALEPH_AVR32)/src/fonts/ume_tgo5_18.c \
+$(ALEPH_AVR32)/src/fonts/ume_tgo5_18.c
 
 # List of assembler source files.
 ASSRCS += \
