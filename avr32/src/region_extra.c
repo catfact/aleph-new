@@ -1,4 +1,6 @@
 #include "region_extra.h"
+#include "font.h"
+#include "font_aa.h"
 
 // render a string to a region using the default anti-aliased font.
 void region_string_aa(
