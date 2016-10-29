@@ -9,12 +9,12 @@ APP = bees
 # baudrate! can override in make invocation
 BAUD=115200
 
-# libavr32 configuration
-include ../libavr32_config.mk
-# libavr32 sources
-include ../libavr32_src.mk
-# aleph-specific boilerplate
-include ../aleph_app_src.mk
+# avr32 configuration
+include ../aleph_avr32_config.mk
+# avr32 sources
+include ../aleph_avr32_src.mk
+
+$(info CSRCS="$(CSRCS)")
 
 # add C source files from application
 # please keep this alphabetized... 

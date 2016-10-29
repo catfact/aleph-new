@@ -1,15 +1,13 @@
 # ------------------------
-# -- avr32_lib_config.mk
+# -- aleph_avr32_config.mk
 
-# boilerplate configuration makefile for aleph-avr32 applications.
-
-# app developers: feel free to include this or copy/edit as you like,
-# but beware of breaking things / bricking your unit..
-
+# configure paths for libavr32, common code, app code, and 
 # avr32 core directory, relative to top-level asf
 LIB_AVR32 = ../
 # aleph common directory
 ALEPH_COMMON = ../../common
+# aleph-specific avr32 code
+ALEPH_AVR32 = ../../avr32
 # application directory
 APP_DIR = ../../apps/$(APP)
 
@@ -52,6 +50,3 @@ CPPFLAGS = \
 # linking with the trampoline on a bootloaded app is bad news.
 # LDFLAGS = -nostartfiles -Wl,-e,_trampoline
 LDFLAGS = -nostartfiles
-
-# for external heap:
-# LDFLAGS += --gc-sections,--defsym,__heap_size__=0x00080000

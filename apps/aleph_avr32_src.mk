@@ -1,8 +1,7 @@
 # ------------------------
-# -- libavr32_src.mk
+# -- aleph_avr32_src.mk
 
-# boilerplate source/translation units from libavr32.
-
+# sources from libavr32
 CSRCS += \
 avr32/drivers/ebi/smc/smc.c \
 avr32/drivers/flashc/flashc.c                      \
@@ -41,7 +40,7 @@ $(LIB_AVR32)src/usb/midi/midi.c \
 $(LIB_AVR32)src/fix.c \
 $(LIB_AVR32)src/libfixmath/fix16.c
 
-# List of include paths.
+# include paths from libavr32
 INC_PATH += \
 avr32/boards                                       \
 avr32/boards/user_board                               \
@@ -81,5 +80,44 @@ $(LIB_AVR32)src/usb     \
 $(LIB_AVR32)src/usb/ftdi   \
 $(LIB_AVR32)src/usb/hid \
 $(LIB_AVR32)src/usb/midi   \
-$(LIB_AVR32)src/libfixmath \
+$(LIB_AVR32)src/libfixmath
+
+# aleph_specific avr32 sources
+CSRCS += \
+$(ALEPH_AVR32)/src/adc_poll.c \
+$(ALEPH_AVR32)/src/app.c \
+$(ALEPH_AVR32)/src/bfin.c \
+$(ALEPH_AVR32)/src/control.c \
+$(ALEPH_AVR32)/src/encoders.c \
+$(ALEPH_AVR32)/src/filesystem.c \
+$(ALEPH_AVR32)/src/flash.c \
+$(ALEPH_AVR32)/src/font_aa.c \
+$(ALEPH_AVR32)/src/init.c	\
+$(ALEPH_AVR32)/src/interrupts.c \
+$(ALEPH_AVR32)/src/main.c \
+$(ALEPH_AVR32)/src/memory.c \
+$(ALEPH_AVR32)/src/region_extra.c \
+$(ALEPH_AVR32)/src/serial.c \
+$(ALEPH_AVR32)/src/simple_string.c \
+$(ALEPH_AVR32)/src/switches.c \
+$(ALEPH_AVR32)/src/fat_io_lib/fat_access.c \
+$(ALEPH_AVR32)/src/fat_io_lib/fat_cache.c \
+$(ALEPH_AVR32)/src/fat_io_lib/fat_filelib.c \
+$(ALEPH_AVR32)/src/fat_io_lib/fat_format.c \
+$(ALEPH_AVR32)/src/fat_io_lib/fat_misc.c \
+$(ALEPH_AVR32)/src/fat_io_lib/fat_string.c \
+$(ALEPH_AVR32)/src/fat_io_lib/fat_table.c \
+$(ALEPH_AVR32)/src/fat_io_lib/fat_write.c \
+$(ALEPH_AVR32)/src/fonts/ume_tgo5_18.c
+
+# List of assembler source files.
+ASSRCS += \
+avr32/drivers/intc/exception.S \
+avr32/utils/startup/trampoline_uc3.S \
+$(ALEPH_AVR32)/startup/startup.S \
+
+# aleph-specific avr32 include paths
+INC_PATH += \
+$(ALEPH_AVR32)/src \
+$(ALEPH_AVR32)/src/fat_io_lib \
 $(ALEPH_COMMON)
