@@ -15,7 +15,6 @@ avr32/drivers/spi/spi.c                            \
 avr32/drivers/tc/tc.c                              \
 avr32/drivers/twi/twi.c                            \
 avr32/drivers/usart/usart.c                        \
-avr32/utils/debug/print_funcs.c                    \
 avr32/components/memory/sd_mmc/sd_mmc_spi/sd_mmc_spi.c \
 avr32/components/memory/sd_mmc/sd_mmc_spi/sd_mmc_spi_mem.c \
 avr32/drivers/usbb/usbb_host.c                     \
@@ -27,6 +26,7 @@ $(LIB_AVR32)src/events.c \
 $(LIB_AVR32)src/font.c \
 $(LIB_AVR32)src/i2c.c \
 $(LIB_AVR32)src/monome.c \
+$(LIB_AVR32)src/print_funcs.c \
 $(LIB_AVR32)src/region.c \
 $(LIB_AVR32)src/screen.c \
 $(LIB_AVR32)src/timers.c \
