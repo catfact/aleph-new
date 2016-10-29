@@ -39,9 +39,31 @@ DBGFLAGS =
 # optimization level
 OPTIMIZATION = -O3
 
+
+# release/debug build
+ifdef R
+  ifeq ("$(origin R)", "command line")
+    RELEASE = $(R)
+  endif
+endif
+ifndef RELEASE
+  RELEASE = 0
+endif
+
+$(info RELEASE: $(RELEASE))
+
+# version define
+include version.mk
+ifeq ($(RELEASE), 1)
+  version := $(maj).$(min).$(rev)
+else
+  version := $(maj).$(min).$(rev)-dbg
+endif
+
+
 # preprocessor definitions
 CPPFLAGS = \
-       -D BOARD=USER_BOARD -D ARCH_AVR32=1 -D UHD_ENABLE -DDEV_USART_BAUDRATE=$(BAUD)
+       -D BOARD=USER_BOARD -D ARCH_AVR32=1 -D UHD_ENABLE -DDEV_USART_BAUDRATE=$(BAUD) -D VERSIONSTRING='"$(version)"' -D MAJ=$(maj) -D MIN=$(min) -D REV=$(rev) -D RELEASEBUILD=$(RELEASE)
 
 # Extra flags to use when linking
 #####
