@@ -6,7 +6,7 @@
 #define _ENCODERS_H_
 
 #include "compiler.h"
-#include "aleph_event_types.h"
+#include "events.h"
 #include "types.h"
 
 #define NUM_ENC 4

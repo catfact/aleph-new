@@ -307,6 +307,8 @@ s32 bfin_get_param(u8 idx) {
     return pval.asInt;
 }
 
+
+#if 0 // not working
 // get audio cpu usage
 s32 bfin_get_audio_cpu(void) {
     ParamValueSwap pval;
@@ -357,7 +359,9 @@ s32 bfin_get_audio_cpu(void) {
 
     return pval.asInt;
 }
+#endif
 
+# if 0 // not working
 //! get param change cpu usage
 s32 bfin_get_control_cpu(void) {
     ParamValueSwap pval;
@@ -394,6 +398,7 @@ s32 bfin_get_control_cpu(void) {
 
     return pval.asInt;
 }
+#endif
 
 // fill a buffer on the blackfin with arbitrary data
 void bfin_fill_buffer(const s32* src, u32 bytes) {

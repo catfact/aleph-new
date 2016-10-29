@@ -14,7 +14,6 @@
 #include "debug.h"
 #include "encoders.h"
 #include "events.h"
-#include "event_types.h"
 #include "filesystem.h"
 #include "global.h"
 #include "interrupts.h"

@@ -9,7 +9,7 @@
 #ifndef _ALEPH_AVR32_APP_H_
 #define _ALEPH_AVR32_APP_H_
 
-#include "aleph_event_types.h"
+#include "conf_board.h"
 #include "events.h"
 #include "types.h"
 

@@ -9,7 +9,6 @@
 // aleph
 #include "conf_board.h"
 #include "events.h"
-#include "event_types.h"
 #include "global.h"
 #include "switches.h"
 #include "types.h"

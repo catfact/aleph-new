@@ -162,9 +162,10 @@ static inline void assign_main_event_handlers(void) {
     app_event_handlers[kEventMonomePoll] = &handler_MonomePoll;
     app_event_handlers[kEventMonomeRefresh] = &handler_MonomeRefresh;
     app_event_handlers[kEventMonomeGridKey] = &dummy_handler;
-    app_event_handlers[kEventMonomeGridTilt] = &dummy_handler;
     app_event_handlers[kEventMonomeRingEnc] = &dummy_handler;
-    app_event_handlers[kEventMonomeRingKey] = &dummy_handler;
+		// no longer supported by current monome hardware
+	//    app_event_handlers[kEventMonomeGridTilt] = &dummy_handler;
+	//    app_event_handlers[kEventMonomeRingKey] = &dummy_handler;
     app_event_handlers[kEventMidiConnect] = &handler_MidiConnect;
     app_event_handlers[kEventMidiDisconnect] = &dummy_handler;
     app_event_handlers[kEventMidiPacket] = &dummy_handler;

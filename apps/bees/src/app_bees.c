@@ -12,14 +12,15 @@
 #include "print_funcs.h"
 #include "sd_mmc_spi.h"
 
-// aleph-avr32
-#include "aleph_event_types.h"
-#include "app.h"
-#include "bfin.h"
+// libavr32
 #include "events.h"
-#include "flash.h"
 #include "monome.h"
 #include "screen.h"
+
+// aleph-avr32
+#include "app.h"
+#include "bfin.h"
+#include "flash.h"
 
 // bees
 #include "app_bees.h"

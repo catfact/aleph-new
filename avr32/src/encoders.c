@@ -11,7 +11,6 @@
 #include "conf_board.h"
 #include "debug.h"
 #include "events.h"
-#include "event_types.h"
 #include "encoders.h"
 
 #define ENC_THRESH_DEFAULT 0
