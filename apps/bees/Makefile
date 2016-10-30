@@ -34,15 +34,10 @@ include $(MAKEFILE_PATH)
 deploy:
 	echo "cleaning project..."
 	make clean
-	echo "building -dbg..."
+	echo "building debug..."
 	make -k
-	cp $(project).hex $(project)-$(version).hex
-	rm avr32/utils/debug/print_funcs.o
-	rm src/app_bees.o
-	rm $(project).hex
+	cp $(project).hex $(project)-$(maj).$(min).$(rev)-dbg.hex
+	make clean
 	echo "building release..."
 	make -k R=1
-	cp $(project).hex $(project)-$(version).hex
-#	cp  $(project).hex ../../release/	
-#	cp  $(project)-$(maj).$(min).$(rev).hex ../../release/	
-#	cp  $(project)-$(maj).$(min).$(rev)-dbg.hex ../../release/	
+	cp $(project).hex $(project)-$(maj).$(min).$(rev).hex

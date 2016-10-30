@@ -29,7 +29,6 @@ PROG_CLOCK = int
 TARGET = aleph-$(APP).elf
 
 # Path relative to top level directory pointing to a linker script.
-# LINKER_SCRIPT = avr32/utils/linker_scripts/at32uc3a/0512/gcc/link_uc3a0512.lds
 LINKER_SCRIPT = $(APP_DIR)/aleph-$(APP).lds
 
 # AVR32 options for debugging. By default the common Makefile.in will
@@ -38,7 +37,6 @@ DBGFLAGS =
 
 # optimization level
 OPTIMIZATION = -O3
-
 
 # release/debug build
 ifdef R
@@ -54,12 +52,6 @@ $(info RELEASE: $(RELEASE))
 
 # version define
 include version.mk
-ifeq ($(RELEASE), 1)
-  version := $(maj).$(min).$(rev)
-else
-  version := $(maj).$(min).$(rev)-dbg
-endif
-
 
 # preprocessor definitions
 CPPFLAGS = \
