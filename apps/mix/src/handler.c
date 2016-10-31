@@ -25,7 +25,7 @@
 // aleph-avr32
 #include "conf_board.h"
 #include "app.h"
-#include "event_types.h"
+#include "events.h"
 
 // custom app sources
 #include "app_timers.h"

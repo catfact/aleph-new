@@ -14,7 +14,7 @@ include ../aleph_avr32_config.mk
 # avr32 sources
 include ../aleph_avr32_src.mk
 
-$(info CSRCS="$(CSRCS)")
+# $(info CSRCS="$(CSRCS)")
 
 # add C source files from application
 # please keep this alphabetized... 

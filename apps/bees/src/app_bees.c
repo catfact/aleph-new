@@ -80,7 +80,6 @@ void app_init(void) {
 // this is called from main event handler
 u8 app_launch(eLaunchState state) {
 
-  
   print_dbg("\r\n launching app with state: ");
   print_dbg_ulong(state);
 
