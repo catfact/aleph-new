@@ -26,7 +26,6 @@ $(LIB_AVR32)src/events.c \
 $(LIB_AVR32)src/font.c \
 $(LIB_AVR32)src/i2c.c \
 $(LIB_AVR32)src/monome.c \
-$(LIB_AVR32)src/print_funcs.c \
 $(LIB_AVR32)src/region.c \
 $(LIB_AVR32)src/screen.c \
 $(LIB_AVR32)src/timers.c \
@@ -43,7 +42,6 @@ $(LIB_AVR32)src/libfixmath/fix16.c
 # include paths from libavr32
 INC_PATH += \
 avr32/boards                                       \
-avr32/boards/user_board                               \
 avr32/components/memory/sdram			 \
 avr32/drivers/cpu/cycle_counter/                 \
 avr32/drivers/ebi/smc/                            \
@@ -61,7 +59,6 @@ avr32/drivers/usbb                                 \
 avr32/services/delay                               \
 avr32/services/fs/fat                              \
 avr32/utils                                        \
-avr32/utils/debug                                  \
 avr32/utils/preprocessor                           \
 common/boards                                      \
 avr32/components/memory/sd_mmc/sd_mmc_spi         \
@@ -96,6 +93,7 @@ $(ALEPH_AVR32)/src/init.c	\
 $(ALEPH_AVR32)/src/interrupts.c \
 $(ALEPH_AVR32)/src/main.c \
 $(ALEPH_AVR32)/src/memory.c \
+$(ALEPH_AVR32)/src/print_funcs.c \
 $(ALEPH_AVR32)/src/region_extra.c \
 $(ALEPH_AVR32)/src/serial.c \
 $(ALEPH_AVR32)/src/simple_string.c \
